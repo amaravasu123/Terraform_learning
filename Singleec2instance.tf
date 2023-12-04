@@ -3,6 +3,8 @@ provider "aws" {
   
 }
 resource "aws_instance" "this" {
-  ami                     = "ami-0dcc1e21636832c5d"
-  instance_type           = "m5.large"
+  ami = "ami-0287a05f0ef0e9d9a"
+  instance_type = "t2.micro"
+  subnet_id = "subnet-057919d3e6569a262"
+  key_name = "ansible"
 }
